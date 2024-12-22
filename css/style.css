@@ -928,3 +928,26 @@ a:focus {
   color: inherit;
 }
 /*# sourceMappingURL=style.css.map */
+
+.custom-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #1F1471;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.custom-button:hover {
+  background-color: #a04545;
+}
+
+body {
+  background: #1F1471;
+  height: 1920px 55px ;
+  margin: 0;
+}
+
