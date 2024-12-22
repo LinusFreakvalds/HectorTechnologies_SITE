@@ -44,6 +44,7 @@ body {
 }
 
 .heading_container h2 {
+  color: white;
   position: relative;
   font-weight: bold;
   margin-bottom: 0;
@@ -54,6 +55,7 @@ body {
 }
 
 .heading_container p {
+  color: #00bbf0;
   margin-top: 10px;
   margin-bottom: 0;
 }
@@ -914,7 +916,7 @@ a:focus {
 /* footer section*/
 .footer_section {
   position: relative;
-  background-color: #ffffff;
+  background-color: #1F1471;
   text-align: center;
 }
 
@@ -950,4 +952,35 @@ body {
   height: 1920px 55px ;
   margin: 0;
 }
+
+.privacy_policy {
+  background-color: #00bbf0;
+  border-radius: 35px;
+}
+
+.footer_section {
+  background-color: #1F1471;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  transition: transform 0.3s;
+}
+
+.footer_section .container {
+  display: inline-block;
+}
+
+.privacy_policy a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+.privacy_policy a:hover {
+  text-decoration: underline;
+}
+
+.footer_section:hover {
+  transform: scaleX(1.1);
+}
+
 
