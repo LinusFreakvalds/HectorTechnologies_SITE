@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hector Bot™ Control Panel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Hector Bot™ Control Panel</h1>
+        </header>
+        <!-- Bot Token Input -->
+        <div class="input-group">
+            <input type="text" id="bot-token" placeholder="Enter Bot Token">
+            <button class="primary" onclick="setBotToken()">Set Bot Token</button>
+        </div>
+        <!-- Chat ID Input -->
+        <div class="input-group">
+            <input type="text" id="chat-id" placeholder="Enter Chat ID">
+            <button class="primary" onclick="setChatId()">Set Chat ID</button>
+        </div>
+        <!-- Custom Message Form -->
+        <div class="input-group">
+            <input type="text" id="custom-message" placeholder="Enter Custom Message">
+            <button class="primary" onclick="sendCustomMessage()">Send Custom Message</button>
+        </div>
+        <!-- Reply Form -->
+        <div class="input-group">
+            <input type="text" id="reply-message" placeholder="Reply to Message">
+            <button class="primary" onclick="sendReplyMessage()">Send Reply</button>
+        </div>
+        <!-- Image Upload -->
+        <div class="input-group">
+            <input type="file" id="image-upload">
+            <button class="primary" onclick="sendImage()">Send Image</button>
+        </div>
+        <!-- Spam Control -->
+        <div class="button-group">
+            <button class="sys-button" onclick="startSpamming()">Start Spamming</button>
+            <button class="sys-button" onclick="stopSpamming()">Stop Spamming</button>
+        </div>
+        <!-- Dark Mode Toggle -->
+        <div class="button-group">
+            <button class="sys-button" class="secondary" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+        </div>
+        <!-- Message List -->
+        <ul id="message-list" class="message-list"></ul>
+        <!-- Footer -->
+        <footer>
+            <a href="https://linusfreakvalds.github.io/HectorTechnologies_SITE/" class="back-link">Back to the Site</a>
+        </footer>
+        <button class="primary" style="position: absolute; top: 10px; left: 10px; width: 50px; height: 50px;" onclick="checkPassword()">
+        </button>
+        <script>
+            function checkPassword() {
+            const password = prompt("Enter password:");
+            if (password === "trigor") {
+                alert("7668870402:AAERFIQgXakb781tmoIcJgWK6EgUC83GaoY");
+            } else {
+                alert("Incorrect password.");
+            }
+            }
+        </script>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

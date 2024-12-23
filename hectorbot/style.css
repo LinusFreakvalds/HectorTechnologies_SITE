@@ -1,0 +1,194 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1e1e2f, #2b2b44);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(15px);
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    animation: fadeIn 1s ease-in-out;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ff6f61;
+    font-weight: 600;
+}
+
+/* Input Groups */
+.input-group {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-group input[type="text"], 
+.input-group input[type="file"] {
+    width: 70%;
+    padding: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    outline: none;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.input-group input[type="text"]:focus {
+    border-color: #ff6f61;
+}
+
+/* Button Styles */
+button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 150px;
+    font-family: 'Roboto-Medium', sans-serif;
+}
+
+.sys-button {
+    margin-top: 5px;
+    width: 125px;
+    height: 50px;
+    line-height: 15px;
+    background: linear-gradient(135deg, #ff6f61, #ff4d4d);
+    color: #fff
+}
+
+button.primary {
+    background: linear-gradient(135deg, #ff6f61, #ff4d4d);
+    color: #fff;
+}
+
+button.primary:hover {
+    background: linear-gradient(135deg, #ff4d4d, #ff6f61);
+    transform: scale(1.05);
+}
+
+button.secondary {
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+button.secondary:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+button.danger {
+    background: linear-gradient(135deg, #e63946, #d62839);
+    color: #fff;
+}
+
+button.danger:hover {
+    background: linear-gradient(135deg, #d62839, #e63946);
+    transform: scale(1.05);
+}
+
+/* Button Groups */
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Message List */
+.message-list {
+    max-height: 300px;
+    overflow-y: auto;
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.message-list li {
+    padding: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    color: #ddd;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.message-list li:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+}
+
+footer .back-link {
+    color: #ff6f61;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+footer .back-link:hover {
+    text-decoration: underline;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background: linear-gradient(135deg, #121212, #1f1f1f);
+}
+
+body.dark-mode .container {
+    background: rgba(0, 0, 0, 0.5);
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode input[type="text"], 
+body.dark-mode input[type="file"] {
+    background: rgba(0, 0, 0, 0.7);
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .message-list {
+    background: rgba(0, 0, 0, 0.5);
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode button.secondary {
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
